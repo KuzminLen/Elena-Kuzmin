@@ -1,0 +1,37 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class FlightBooking {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		  System.setProperty("webdriver.chrome.driver", "C:\\Automation\\Drivers\\chromedriver.exe");
+	      WebDriver driver = new ChromeDriver();
+		
+	      driver.manage().window().maximize();
+	      driver.get("https://amsalem.co.il");
+	      
+	      Thread.sleep(2000);
+	       WebElement element = driver.findElement(By.xpath("//*[@id='destination-01a6-c2fb'"));
+	       element.isSelected();	     
+  
+	    // driver.findElement(By.cssSelector("#destination-9dc2-ff2b")).click();
+	      
+	  // Select selectWay = new Select(driver.findElement(By.cssSelector("#destination-9dc2-ff2b")));
+	 // selectWay.getOptions();
+		   
+	   //Select selectdate1 = new Select(driver.findElement(By.cssSelector(".ui-state-default.ui-state-active")));
+	  // selectdate1.getClass();
+	      
+	      
+	    //  By.ByCssSelector("ui-id-245")
+	      
+	      
+	      
+	      
+	}
+
+}
